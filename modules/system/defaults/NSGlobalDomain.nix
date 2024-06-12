@@ -269,12 +269,12 @@ in {
         Whether to enable moving window by holding anywhere on it like on Linux. The default is false.
       '';
     };
-    
+
     system.defaults.NSGlobalDomain.NSStatusItemSpacing = mkOption {
       type = types.nullOr types.int;
       default = null;
       example = 12;
-      description = lib.mdDoc ''
+      description = ''
         Sets the spacing between status icons in the menu bar. The default is null.
       '';
     };
@@ -283,7 +283,7 @@ in {
       type = types.nullOr types.int;
       default = null;
       example = 6;
-      description = lib.mdDoc ''
+      description = ''
         Sets the padding around status icons in the menu bar. The default is null.
       '';
     };
